@@ -6,7 +6,7 @@ block content
         p.meta Posted in 
                 a(href='/categories/show/#{post.category}') #{post.category} 
                 by #{post.author} on #{moment(post.date).format("MM-DD-YYYY")}
-        img(src='./public/images/uploads/#{post.mainimage}')
+        img(src='/images/uploads/#{post.mainimage}')
         !=post.body, 400
         br
         hr
